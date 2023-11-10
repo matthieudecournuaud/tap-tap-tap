@@ -5,27 +5,43 @@ using UnityEngine;
 public class PipesSpawner : MonoBehaviour
 {
     public float maxTime = 2;
-    public float timer = 0;
+    private float timer = 0;
     public GameObject pipe;
     public float height;
 
-    // Start is called before the first frame update
-    void Start()
+    private bool gameIsPaused = false; // Ajoutez une variable pour vérifier si le jeu est en pause
+
+    private void Start()
     {
-        
+        // Inscrivez-vous à l'événement de mise en pause du jeu
+        GameManager.Instance.OnGamePaused += HandleGamePaused;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnDestroy()
     {
-        if(timer > maxTime )
-        {
-            GameObject newpipe = Instantiate(pipe);
-            newpipe.transform.position = transform.position + new Vector3(0, Random.Range(-height, height), 0);
-            Destroy(newpipe, 10);
-            timer = 0;
-        }
+        // Désinscrivez-vous de l'événement lorsque l'objet est détruit
+        GameManager.Instance.OnGamePaused -= HandleGamePaused;
+    }
 
-        timer += Time.deltaTime;
+    private void HandleGamePaused(bool isPaused)
+    {
+        // Mettez à jour l'état du jeu lorsqu'il est en pause ou en reprise
+        gameIsPaused = isPaused;
+    }
+
+    private void Update()
+    {
+        if (!gameIsPaused) // Vérifiez si le jeu n'est pas en pause
+        {
+            if (timer > maxTime)
+            {
+                GameObject newPipe = Instantiate(pipe);
+                newPipe.transform.position = transform.position + new Vector3(0, Random.Range(-height, height), 0);
+                Destroy(newPipe, 10);
+                timer = 0;
+            }
+
+            timer += Time.deltaTime;
+        }
     }
 }

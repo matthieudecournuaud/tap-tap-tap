@@ -6,9 +6,9 @@ public class Score : MonoBehaviour
 {
     public static int score = 0;
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
-        score = 0;
+        ResetScore();
     }
 
     // Update is called once per frame
@@ -16,4 +16,10 @@ public class Score : MonoBehaviour
     {
         GetComponent<UnityEngine.UI.Text>().text = score.ToString();
     }
+
+    public void ResetScore()
+    {
+        score = 0;
+    }
+
 }

@@ -4,6 +4,48 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Scene-niveau 1.unity
+    guid: 8b0814ad6b9214f3aac25d1ed58f103c
+  - enabled: 1
+    path: Assets/Scenes/Scene-niveau 2.unity
+    guid: 1b2b6c5af38e84806a21e024d19901aa
+  - enabled: 1
+    path: Assets/Scenes/Scene-niveau 3.unity
+    guid: 95b768c3984a340f78a1d385663c41a3
+  - enabled: 1
+    path: Assets/Scenes/Scene-niveau 4.unity
+    guid: 8f45ec883035d419092316a851c7904a
+  - enabled: 1
+    path: Assets/Scenes/Scene-niveau 5.unity
+    guid: d3f5dd12e91614094a11d736f9499213
+  - enabled: 1
+    path: Assets/Scenes/Scene-niveau 6.unity
+    guid: 71d16edb40b864651b0f5870434a3a59
+  - enabled: 1
+    path: Assets/Scenes/Scene-niveau 7.unity
+    guid: 4fff6f1d54be24eea96797a90b10f6e2
+  - enabled: 1
+    path: Assets/Scenes/Scene-niveau 8.unity
+    guid: de7e3d832bab74781a433b04b4fb153c
+  - enabled: 1
+    path: Assets/Scenes/Scene-niveau 9.unity
+    guid: 368ad4bd28a2b4c99943a72ca7ab8a50
+  - enabled: 1
+    path: Assets/Scenes/Scene-niveau 10.unity
+    guid: 62783a7269c5143c883b0ee8794e7c01
+  - enabled: 1
+    path: Assets/Scenes/Menuing.unity
+    guid: 2854af23ae7ff48d3a0797fe9556ceda
+  - enabled: 1
+    path: Assets/Scenes/MenuCharacters.unity
+    guid: 9179e1371885c49d3b2314930bc6b335
+  - enabled: 1
+    path: Assets/Scenes/MenuLevels.unity
+    guid: ca19a0a79d2bc4d9e8edad6324a9a05d
+  - enabled: 1
+    path: Assets/Scenes/MenuRecords.unity
+    guid: 771a5bcf5f4674da0a512738ee59a799
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

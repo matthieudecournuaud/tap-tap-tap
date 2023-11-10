@@ -11,6 +11,12 @@ public class FlyLittleBird : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        gameManager = FindFirstObjectByType<GameManager>();
+
+        if (gameManager == null)
+        {
+            Debug.LogError("GameManager not found in the scene.");
+        }
     }
 
     void Update()
@@ -32,6 +38,20 @@ public class FlyLittleBird : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if (gameManager == null)
+        {
+            Debug.LogError("GameManager is not assigned in FlyLittleBird.");
+            return;
+        }
+
         gameManager.GameOver();
     }
+
+
+    public void ResetBird()
+    {
+        rb.velocity = Vector2.zero; // Annule toute vitesse résiduelle
+        transform.position = new Vector3(0, 0, 0); // Remet l'oiseau à sa position initiale ou à une position par défaut
+    }
+
 }
