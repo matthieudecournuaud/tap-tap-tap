@@ -41,10 +41,5 @@ public class CanvasButtonManager : MonoBehaviour
     {
         GameManager.Instance.ToMenuing();
     }
-
-    public void GoToMenuCharacter()
-    {
-        GameManager.Instance.ToMenuCharacter();
-    }
     // Ajoutez d'autres méthodes au besoin pour d'autres boutons
 }

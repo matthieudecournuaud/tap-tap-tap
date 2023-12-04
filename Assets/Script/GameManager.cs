@@ -45,11 +45,7 @@ public class GameManager : MonoBehaviour
 
         gameOverCanvas.SetActive(false);
         menuCanvas.SetActive(false);
-
-        // Autres initialisations nécessaires
     }
-
-
 
     private void OnDestroy()
     {
@@ -60,7 +56,6 @@ public class GameManager : MonoBehaviour
     {
         if (gameOverCanvas == null)
         {
-            Debug.LogError("GameOverCanvas is not assigned.");
             return;
         }
 
@@ -89,14 +84,7 @@ public class GameManager : MonoBehaviour
 
     public void ToMenuing()
     {
-        Debug.Log("Menu button clicked.");
         SceneManager.LoadScene("Menuing");
-    }
-
-    public void ToMenuCharacter()
-    {
-        Debug.Log("MenuCharacter Button clicked.");
-        SceneManager.LoadScene("MenuCharacters");
     }
 
     public void MenuingLevel()
@@ -122,12 +110,10 @@ public class GameManager : MonoBehaviour
     public void LoadLevelByNumber(int levelNumber)
     {
         SetLastPlayedLevel(levelNumber); // Mettez à jour le dernier niveau joué avant de charger le nouveau niveau
-        Debug.Log("Chargement du niveau : " + levelNumber);
         string sceneName = "Scene-niveau " + levelNumber;
         SceneManager.LoadScene(sceneName);
         Time.timeScale = 1;
     }
-
 
     private void SetupCanvasButtons()
     {
@@ -145,8 +131,6 @@ public class GameManager : MonoBehaviour
             menuButton.onClick.RemoveAllListeners();
             menuButton.onClick.AddListener(ToMenuing);
         }
-
-        // Effectuez des opérations similaires pour d'autres boutons si nécessaire
     }
 
     // Appelez cette méthode chaque fois que vous chargez une nouvelle scène de niveau
@@ -160,7 +144,6 @@ public class GameManager : MonoBehaviour
     public void LoadLastPlayedLevel()
     {
         int level = PlayerPrefs.GetInt("LastPlayedLevelIndex", 0);
-        Debug.Log("Loading last played level: " + level);
         SceneManager.LoadScene(level);
     }
 }

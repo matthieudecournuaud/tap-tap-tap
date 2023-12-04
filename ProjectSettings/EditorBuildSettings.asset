@@ -39,9 +39,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Menuing.unity
     guid: 2854af23ae7ff48d3a0797fe9556ceda
   - enabled: 1
-    path: Assets/Scenes/MenuCharacters.unity
-    guid: 9179e1371885c49d3b2314930bc6b335
-  - enabled: 1
     path: Assets/Scenes/MenuLevels.unity
     guid: ca19a0a79d2bc4d9e8edad6324a9a05d
   - enabled: 1

@@ -575,6 +575,7 @@ GameObject:
   - component: {fileID: 283270069}
   - component: {fileID: 283270068}
   - component: {fileID: 283270067}
+  - component: {fileID: 283270070}
   m_Layer: 5
   m_Name: Image Level10
   m_TagString: Untagged
@@ -646,9 +647,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 338896901}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: LoadLevelByNumber
+      - m_Target: {fileID: 283270070}
+        m_TargetAssemblyTypeName: CanvasButtonManager, Assembly-CSharp
+        m_MethodName: OnLevelButtonClicked
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -696,6 +697,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 283270065}
   m_CullTransparentMesh: 1
+--- !u!114 &283270070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 283270065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55065659227464afea45236564d84472, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &338896900
 GameObject:
   m_ObjectHideFlags: 0
@@ -1478,6 +1491,7 @@ GameObject:
   - component: {fileID: 652149342}
   - component: {fileID: 652149341}
   - component: {fileID: 652149340}
+  - component: {fileID: 652149343}
   m_Layer: 5
   m_Name: Image Level7
   m_TagString: Untagged
@@ -1549,9 +1563,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 338896901}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: LoadLevelByNumber
+      - m_Target: {fileID: 652149343}
+        m_TargetAssemblyTypeName: CanvasButtonManager, Assembly-CSharp
+        m_MethodName: OnLevelButtonClicked
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1599,6 +1613,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 652149338}
   m_CullTransparentMesh: 1
+--- !u!114 &652149343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652149338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55065659227464afea45236564d84472, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &653742597
 GameObject:
   m_ObjectHideFlags: 0
@@ -1781,6 +1807,7 @@ GameObject:
   - component: {fileID: 696184200}
   - component: {fileID: 696184199}
   - component: {fileID: 696184198}
+  - component: {fileID: 696184201}
   m_Layer: 5
   m_Name: Image Level8
   m_TagString: Untagged
@@ -1852,9 +1879,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 338896901}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: LoadLevelByNumber
+      - m_Target: {fileID: 696184201}
+        m_TargetAssemblyTypeName: CanvasButtonManager, Assembly-CSharp
+        m_MethodName: OnLevelButtonClicked
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1902,6 +1929,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 696184196}
   m_CullTransparentMesh: 1
+--- !u!114 &696184201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696184196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55065659227464afea45236564d84472, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &725812366
 GameObject:
   m_ObjectHideFlags: 0
@@ -2423,6 +2462,7 @@ GameObject:
   - component: {fileID: 1262995591}
   - component: {fileID: 1262995590}
   - component: {fileID: 1262995589}
+  - component: {fileID: 1262995592}
   m_Layer: 5
   m_Name: Image Level6
   m_TagString: Untagged
@@ -2494,9 +2534,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 338896901}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: LoadLevelByNumber
+      - m_Target: {fileID: 1262995592}
+        m_TargetAssemblyTypeName: CanvasButtonManager, Assembly-CSharp
+        m_MethodName: OnLevelButtonClicked
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2544,6 +2584,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1262995587}
   m_CullTransparentMesh: 1
+--- !u!114 &1262995592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1262995587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55065659227464afea45236564d84472, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1277430261
 GameObject:
   m_ObjectHideFlags: 0
@@ -2860,6 +2912,7 @@ GameObject:
   - component: {fileID: 1599229321}
   - component: {fileID: 1599229320}
   - component: {fileID: 1599229319}
+  - component: {fileID: 1599229322}
   m_Layer: 5
   m_Name: Image Level9
   m_TagString: Untagged
@@ -2931,9 +2984,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 338896901}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: LoadLevelByNumber
+      - m_Target: {fileID: 1599229322}
+        m_TargetAssemblyTypeName: CanvasButtonManager, Assembly-CSharp
+        m_MethodName: OnLevelButtonClicked
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2981,6 +3034,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1599229317}
   m_CullTransparentMesh: 1
+--- !u!114 &1599229322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1599229317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55065659227464afea45236564d84472, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1655173604
 GameObject:
   m_ObjectHideFlags: 0
