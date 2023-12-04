@@ -6,14 +6,12 @@ public class AddScore : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Score.score++; // Supposons que "score" soit le score actuel atteint par le joueur
+        Score.score++; 
 
-        // Récupérez les meilleurs scores actuels
         int bestGoldScore = ScoreManager.GetBestGoldScore();
         int bestSilverScore = ScoreManager.GetBestSilverScore();
         int bestBronzeScore = ScoreManager.GetBestBronzeScore();
 
-        // Comparez le score actuel avec les meilleurs scores et mettez à jour si nécessaire
         if (Score.score > bestGoldScore)
         {
             ScoreManager.UpdateBestScores(Score.score, bestSilverScore, bestBronzeScore);

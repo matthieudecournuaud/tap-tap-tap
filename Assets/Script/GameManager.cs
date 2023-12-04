@@ -99,7 +99,6 @@ public class GameManager : MonoBehaviour
 
     public void ResetGame()
     {
-        // Assurez-vous de mettre à jour cette méthode pour réinitialiser tous les éléments nécessaires du jeu.
         Score.score = 0;
         isGamePaused = false;
         Time.timeScale = 1;
@@ -109,7 +108,7 @@ public class GameManager : MonoBehaviour
 
     public void LoadLevelByNumber(int levelNumber)
     {
-        SetLastPlayedLevel(levelNumber); // Mettez à jour le dernier niveau joué avant de charger le nouveau niveau
+        SetLastPlayedLevel(levelNumber);
         string sceneName = "Scene-niveau " + levelNumber;
         SceneManager.LoadScene(sceneName);
         Time.timeScale = 1;
@@ -117,7 +116,6 @@ public class GameManager : MonoBehaviour
 
     private void SetupCanvasButtons()
     {
-        // Trouvez le bouton Replay dans le prefab instancié et ajoutez le listener
         Button replayButton = gameOverCanvas.GetComponentInChildren<Button>(true);
         if (replayButton != null)
         {
@@ -133,7 +131,6 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    // Appelez cette méthode chaque fois que vous chargez une nouvelle scène de niveau
     public void SetLastPlayedLevel(int level)
     {
         PlayerPrefs.SetInt(GameManager.LastPlayedLevelKey, level);

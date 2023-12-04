@@ -9,29 +9,29 @@ public class PipesSpawner : MonoBehaviour
     public GameObject pipe;
     public float height;
 
-    private bool gameIsPaused = false; // Ajoutez une variable pour vérifier si le jeu est en pause
+    private bool gameIsPaused = false; // Variable qui vérifie si le jeu est en pause
 
     private void Start()
     {
-        // Inscrivez-vous à l'événement de mise en pause du jeu
+        // s'inscrire à l'événement de mise en pause du jeu
         GameManager.Instance.OnGamePaused += HandleGamePaused;
     }
 
     private void OnDestroy()
     {
-        // Désinscrivez-vous de l'événement lorsque l'objet est détruit
+        // Se désinscrire de l'événement lorsque l'objet est détruit
         GameManager.Instance.OnGamePaused -= HandleGamePaused;
     }
 
     private void HandleGamePaused(bool isPaused)
     {
-        // Mettez à jour l'état du jeu lorsqu'il est en pause ou en reprise
+        // Mettre à jour l'état du jeu lorsqu'il est en pause ou en reprise
         gameIsPaused = isPaused;
     }
 
     private void Update()
     {
-        if (!gameIsPaused) // Vérifiez si le jeu n'est pas en pause
+        if (!gameIsPaused) // Vérifier si le jeu n'est pas en pause
         {
             if (timer > maxTime)
             {

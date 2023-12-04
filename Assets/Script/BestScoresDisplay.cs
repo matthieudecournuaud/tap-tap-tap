@@ -9,12 +9,12 @@ public class BestScoresDisplay : MonoBehaviour
 
     private void Start()
     {
-        // Obtenez les meilleurs scores depuis le ScoreManager
+        // Obtenir les meilleurs scores depuis le ScoreManager
         int bestGoldScore = ScoreManager.GetBestGoldScore();
         int bestSilverScore = ScoreManager.GetBestSilverScore();
         int bestBronzeScore = ScoreManager.GetBestBronzeScore();
 
-        // Mettez à jour le texte des TextMeshPro
+        // Mettre à jour le texte des TextMeshPro
         scoreOrText.text = bestGoldScore.ToString();
         scoreArgentText.text = bestSilverScore.ToString();
         scoreBronzeText.text = bestBronzeScore.ToString();
