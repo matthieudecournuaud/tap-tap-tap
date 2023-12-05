@@ -15,8 +15,8 @@ public class ScoreManagerTests
 
         ScoreManager.UpdateBestScores(testGoldScore, testSilverScore, testBronzeScore);
 
-        Assert.AreEqual(testGoldScore, ScoreManager.GetBestGoldScore(), "Le score or est mis a jour correctement.");
-        Assert.AreEqual(testSilverScore, ScoreManager.GetBestSilverScore(), "Le score argent est mis a jour correctement.");
-        Assert.AreEqual(testBronzeScore, ScoreManager.GetBestBronzeScore(), "Le score bronze est mis a jour correctement.");
+        Assert.AreEqual(testGoldScore, ScoreManager.GetBestGoldScore(), "Le score or n'est pas mis à jour correctement.");
+        Assert.AreEqual(testSilverScore, ScoreManager.GetBestSilverScore(), "Le score argent n'est pas mis à jour correctement.");
+        Assert.AreEqual(testBronzeScore, ScoreManager.GetBestBronzeScore(), "Le score bronze n'est pas mis à jour correctement.");
     }
 }
