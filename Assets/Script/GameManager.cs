@@ -10,7 +10,6 @@ public class GameManager : MonoBehaviour
     public GameObject menuCanvasPrefab;
     private GameObject gameOverCanvas;
     private GameObject menuCanvas;
-    private int lastLevelPlayed = 0; // Cette variable garde l'index du dernier niveau joué
     public const string LastPlayedLevelKey = "LastPlayedLevelIndex";
     private bool isGamePaused = false;
 
